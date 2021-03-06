@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 
-type ButtonProps = {
+export type IButtonProps = {
     /** Button contents */
     children: ReactNode;
     /**
@@ -12,7 +12,7 @@ type ButtonProps = {
 /**
  * The world's most _basic_ button
  */
-export const Button: FC<ButtonProps> = ({ children = "Button", onClick }: ButtonProps) => (
+export const Button: FC<IButtonProps> = ({ children = "Button", onClick }: IButtonProps) => (
     <button onClick={onClick} type="button">
         {children}
     </button>
