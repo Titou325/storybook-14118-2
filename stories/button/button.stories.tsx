@@ -1,4 +1,4 @@
-import { Button, IButtonProps } from './button';
+import { Button, ButtonProps } from './button';
 
 const story = {
     title: "Button",
@@ -7,7 +7,7 @@ const story = {
 
 export default story
 
-const Template = (args: IButtonProps) => (
+const Template = (args: ButtonProps) => (
     <Button {...args} />
 )
 
